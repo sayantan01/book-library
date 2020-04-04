@@ -1,0 +1,133 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+    font-family: 'Lexend Deca';
+}
+.mainmenu{
+  font-size: 15px;
+}
+.home{
+  border: 1px solid #171c7a;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #2f8be0;
+}
+.home a{
+  color: #171c7a !important;
+}
+.facebook{
+  border: 1px solid #0085ff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.facebook a{
+  color: #0085ff !important;
+}
+.github{
+  border: 1px solid #0085ff;
+  border-radius: 5px;
+}
+.contribute, .contact, .aboutus, .library, .access{
+  border-top: 1px solid #ababab;
+  border-bottom: 1px solid #ababab;
+  border-left: 1px solid #ababab;
+}
+.library, .contribute{
+  margin-right: 10px;
+  border-right: 1px solid #ababab;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.access, .aboutus{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.mainmenu li:hover{
+  background-color: #d2d2d4 !important;
+}
+.mainmenu li a:hover{
+  color: #171c7a !important;
+}
+.active{
+  background-color: #d2d2d4 !important;
+}
+.active a{
+  color: #171c7a !important;
+}
+.topbanner div div{
+  height: 400px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+.topbanner div div h1{
+  font-style: italic;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: absolute;
+  z-index: 99;
+}
+.topbanner div div img{
+  opacity: 0.5;
+  object-fit: cover;
+  width: 100%;
+  height: 1500px;
+  position: relative;
+}
+.accesssubject h1{
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+.accesssubject button{
+  text-transform: capitalize;
+}
+.paddingContact-container {
+    padding: 68px 15px 72px !important;
+}
+.container h1.white, .company-heading h1 {
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.control-group {
+  margin-bottom: 15px;
+}
+.form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.contact-text-style p {
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.theme-selector {
+  display: none;
+}
+.contact-page-form h3 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.contact-text-style h3 {
+    font-size: 20px;
+    margin: 35px 0px 25px;
+    font-weight: 800;
+    color: #3d3d3d;
+    text-transform: capitalize;
+}
+.marginBottom40 {
+    margin-bottom: 40px;
+}
+.contact-right-info h3, .contact-right-info h2, .contact-right-info p, .contact-right-info a{
+  text-align: right;
+}
+.footer{
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
