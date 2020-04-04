@@ -1,0 +1,16 @@
+{
+  "name": "kroyded",
+  "version": "1.0.0",
+  "description": "A Website that hosts PDFs",
+  "engine":
+  {
+  	"node":"8.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
