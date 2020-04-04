@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 
-express.static("public");
+app.use(express.static("public"));
 const PORT=process.env.PORT || 8080;
 
 app.all('*',(req,res)=>{
