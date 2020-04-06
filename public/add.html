@@ -33,7 +33,7 @@
                 formObj={};
                 for(let i=0;i<formArray.length;i++)
                 {
-                    formObj[formArray[i]['name']]=formObj[i]['value'];
+                    formObj[formArray[i]['name']]=formArray[i]['value'];
                 }
                 $.ajax({
                     url:'/book/add',
