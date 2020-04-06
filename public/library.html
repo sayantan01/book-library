@@ -4,6 +4,14 @@
 <head>
   <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
+
 
   <meta charset="utf-8">
   <title>Kroyded Library</title>
@@ -62,10 +70,42 @@
       </div>
     </nav>
   </div>
+  <button id="list" class="btn btn-primary">See Library Books List</button>
+  <a href="add.html"><btn class="btn btn-warning">Add Book</btn></a>
+  <table class="table-hover" id="table">
+    <thead>
+      <tr>
+        <th data-field="name">Name</th>
+        <th data-field="type">Type</th>
+        <th data-field="tags">Tags</th>
+        <th data-field="download_link">Link</th>
+      </tr>
+    </thead>
+  </table>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+  <!--jquery-->
+  <script>
+    $(document).ready(()=>{
+      $('#list').click((e)=>{
+        $.ajax({
+          url:'/book/list',
+          type:'get',
+          contentType:'application/json',
+        }).done((doc)=>{
+          console.log('done');
+          alert("Hold on!! book list will appear");
+          $('#table').bootstrapTable({
+            data:doc
+          });
+        });
+       
+        });
+      });
+
+</script>
 </body>
 </html>
