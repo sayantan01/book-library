@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 const PORT=process.env.PORT || 3000;
 
-const uri=process.env.MONGODB_URI || "mongodb+srv://sayantan:mydatabase0@cluster0-ve4hp.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const uri=process.env.MONGODB_URI || "mongodb+srv://sayantan:lolnotmypassword:(@cluster0-ve4hp.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
 mongoose.connect(uri,{useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex:true, useFindAndModify:false})
 	.catch((err)=>console.log(err));
